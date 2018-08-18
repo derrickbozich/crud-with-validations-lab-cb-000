@@ -1,4 +1,5 @@
-<h2> <%= @song.title %> by <%= @song.artist_name %></h2>
+<h2><%= @song.title %></h2>
+by <strong><%= @song.artist_name %></strong>
 <% if @song.released? %>
   <p>
     Released in

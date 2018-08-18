@@ -31,7 +31,7 @@ class Song < ActiveRecord::Base
 
   def released_in_a_different_year?
     Song.all.none? do |s|
-      self.release_year != song.release_year && self.artist_name != song.artist_name
+      self.release_year != s.release_year && self.artist_name != s.artist_name
     end
   end
 
